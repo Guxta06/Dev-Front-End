@@ -1,0 +1,113 @@
+body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5dc; /* Cor bege de fundo */
+                color: #000; /* Texto preto */
+            }
+
+            header {
+                background-image: url('https://www.cvc.com.br/dicas-de-viagem/wp-content/uploads/2019/04/sao-joao-campina-grande-emmanuel-tadeuu-topo-e1654087061831.jpg');
+                background-size: cover;
+                background-position: center;
+                padding: 300px; /* Aumentando o padding */
+                text-align: center;
+                color: #fff; /* Texto branco */
+                font-family: "Times New Roman", Times, serif; /* Alterando a fonte */
+                font-size: 30px; /* Alterando o tamanho da fonte */
+            }
+
+            h1 {
+                margin-bottom: 10px;
+            }
+
+            nav {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .menu {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #8b4513; /* Marrom escuro */
+                color: #fff; /* Texto branco */
+                text-decoration: none;
+                margin-right: 10px;
+                border-radius: 20px; /* Formato redondo */
+                transition: background-color 0.3s ease;
+                border: 2px solid #6b3510; /* Borda marrom mais escura */
+            }
+
+            .menu:hover {
+                background-color: #6b3510; /* Marrom escuro mais escuro */
+            }
+
+            .menu:active {
+                transform: translateY(2px); /* Efeito de pressionar */
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            section {
+                margin-bottom: 30px;
+            }
+
+            .topic {
+                padding: 10px;
+                background-color: #8b4513; /* Marrom escuro */
+                color: #000; /* Texto preto */
+                border-radius: 10px; /* Formato redondo */
+                margin-bottom: 20px;
+            }
+
+            .topic h2 {
+                margin-top: 0;
+                font-size: 24px; /* Tamanho de fonte maior */
+            }
+
+            .content {
+                padding: 20px;
+                background-color: #fff; /* Fundo branco */
+                border-radius: 10px; /* Formato redondo */
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 10px;
+            }
+
+            th, td {
+                padding: 10px;
+                text-align: justify;
+                border: 1px solid #000; /* Borda preta */
+            }
+
+            footer {
+                background-color: #8b4513; /* Marrom escuro */
+                color: #fff; /* Texto branco */
+                padding: 20px 0;
+                text-align: center;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+
+            .video-container {
+                position: relative;
+                width: 100%;
+                padding-bottom: 56.25%; /* Proporção do vídeo (16:9) */
+                margin-top: 20px;
+                overflow: hidden;
+            }
+
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
