@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cultura Brasil</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(imagens/fundo.png);
+    margin: 0;
+    background-color: #f3dfba;
+    height: 3600px;
+}
+main{
+    height: 391vh;
+    margin: 20px;
+    width: 800px;
+    font-size: 20px;
+    
+}
+header
+{
+background-image: url('https://www.cvc.com.br/dicas-de-viagem/wp-content/uploads/2019/04/sao-joao-campina-grande-emmanuel-tadeuu-topo-e1654087061831.jpg');
+text-align: center;
+background-repeat: no-repeat;
+background-size: cover;
+mask-image:linear-gradient(to right, transparent 25%, white 100%);
+background-position: center;
+}
+
+header,
+footer
+{
+display: flex; 
+align-items: center;
+height: 60vh;
+justify-content: center;
+}
+#sec1{
+   background-image: url(backs/back2.svg);
+   margin: 0;
+   position: relative;top: 12px;
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+#sec2{
+    background-image: url(backs/cordel2.svg);
+   position: relative; top: 12px;
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+#sec3{
+    background-image: url(backs/back3.svg);
+   position: relative; top: 12px;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   text-shadow: none;
+}
+#titulo{
+    font-size: 100px;
+    position: absolute;
+    top: -500px; 
+    left: 10px;
+    color: rgb(13, 8, 8);
+    text-shadow: 2px 1px #fff6ef;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 0.5s;
+    transform: translateX(0);
+}
+.imgp{
+    margin: 375px;
+    width: 2000px;
+    position: relative;top: -50px;
+}
+
+
+p{
+    text-align: justify;
+    font-size: 25px;
+    position: static;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+td.p1{
+   width: 1500px;
+   height:auto;
+   padding: 10px;
+   position: absolute;
+   top: 200px; 
+   
+   margin: auto;
+}
+td.p2{
+    width: 1500px;
+    height:auto;
+    padding: 10px;
+    position: absolute;
+    top: 1790px;
+    margin: auto;
+ }
+
+table.barra{
+    background-color:#8b4513;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-spacing: 0px;
+    margin: 0PX;
+}
+
+td.barra{
+background-color: none;
+border-style: none;
+border-color: none;
+padding: 100px;
+display: table; float:left; 
+padding: 0px;
+margin: 30px;
+}
+
+
+.p1{
+color: rgb(255, 255, 255);    
+text-align: justify;
+}
+
+button{
+    width: 200px;
+    height: 55px; 
+    display: block; margin-right: auto; margin-left: auto;
+    background-color: #97511e;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-shadow: 5px;
+    transition: transform 200ms ease-in-out;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    transform: scale(1.05);
+  }
+button:hover {
+    background-color: #5e5e5e; /* Marrom escuro mais escuro */
+}
+
+button:active {
+    transform: translateY(2px); /* Efeito de pressionar */
+}
+
+footer {
+    background-color: #8b4513; /* Marrom escuro */
+    color: #fff; /* Texto branco */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 20px;
+
+}
+
+td.player{
+    position: absolute; left: 200px; top: 1500px;
+
+}
+a{
+text-decoration: none;    
+}
+
+.topic {
+    padding: 10px;
+    background-color: #8b4513; /* Marrom escuro */
+    color: #000; /* Texto preto */
+    border-radius: none; /* Formato redondo */
+    margin-bottom: 50px;
+    width: none;
+    height: 700px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 900px;
+    
+}
+
+.topic-texto1 {
+    padding: 10px;
+    background-color: #8b4513; /* Marrom escuro */
+    border-radius: none; /* Formato redondo */
+    margin-bottom: 50px;
+    width: 1500px;
+    height: 400px;
+    position: absolute;
+    top: 170px;
+    box-shadow: 0px 10px #5a2c0b;
+    
+}
+
+.topic-texto2 {
+    padding: 10px;
+    background-color: #8b4513; /* Marrom escuro */
+    border-radius: none; /* Formato redondo */
+    margin-bottom: 50px;
+    width: 1500px;
+    height: 100px;
+    position: absolute;
+    top: 1600px; 
+    box-shadow: 0px 10px #5a2c0b;
+    
+}
+
+.topic-texto3 {
+    padding: 10px;
+    background-color: #8b4513; /* Marrom escuro */
+    border-radius: none; /* Formato redondo */
+    margin-bottom: 50px;
+    width: 1500px;
+    height: 690px;
+    position: absolute;
+    top: 2000px; 
+    box-shadow: 0px 10px #5a2c0b;
+    
+}
+
+.video-container {
+    position: static;
+    width: 1200px;
+    height: 600px;
+    padding-bottom: 56.25%; /* Proporção do vídeo (16:9) */
+    margin-top: 20%;
+    overflow: hidden;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 9%;
+    width: 1000px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+td.t1{
+    position: absolute;
+    left: 1100px;
+    top: 1050px;    
+    width: 400px;
+}
+
+table.foto{
+border: none;
+position: absolute;
+top: 2010px;
+width: 150      0px;
+}
+img.carinha{
+border-radius: 10px;
+padding: 4px;    
+width: 460px;
+height: 400px;    
+}
+p.p3{
+    text-align: justify;
+    font-size: 20px;
+    position: static;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 255, 255);  
+    padding: 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#home{
+    position: fixed; left: 1300px;
+}
+</style>
+</head>
+<body >
+<section>
+<header>
+</header>
+</section>
+<section id="sec1">
+<section  id="sec2">
+<section  id="sec3">
+<main>
+<h1 id="titulo">DIA <br> INTERNACIONAL <br> DA DANÇA</h1>
+</main>
+</section>
+<table class="barra"> 
+    <tr>
+        <td class="barra"><a href="#titulo" id="home"><button>HOME</button></a></td>
+
+        <td class="barra"><a href="historico.html"><button>FESTA JUNINA</button></a></td>
+
+        <td class="barra"><a href="danças.html"><button>DANÇAS JUNINAS</button></a></td>
+
+    </tr>
+</table>
+<table>
+    <div class="topic-texto1"> 
+    <tr>
+        <td class="p1">
+            <p>O Dia Internacional da Dança é comemorado em 29 de abril, data estabelecida pela Comissão Internacional de Dança (IDC) da UNESCO em 1982, comemorando o aniversário de nascimento de Jean Georges Noverre, o mestre de balé francês. 
+            Portanto, esta proposta visa chamar a atenção para esta atividade, para incentivar os governos de todo o mundo a disponibilizarem os seus próprios locais para a realização desta dança.  
+           Benefícios de praticar dança:  • Reduz o estresse e a ansiedade • Aumentar a circulação sanguínea • Antidepressivo • Exercícios de respiração • Promove perda de peso. Neste dia são realizadas diversas atividades por associações, escolas e outras entidades relacionadas com a dança para promover esta arte que é considerada uma linguagem universal, promovendo ideais como a liberdade de expressão e a igualdade de direitos.  “A dança pode revelar tudo o que a música esconde misteriosamente e tem a vantagem adicional de ser humana e palpável. </p> </td>
+    </tr>
+    </div>
+    <div class="topic-texto2">
+    <tr>
+        <td class="t1">
+            <p class="p1">
+             Em relação à dança, é importante ressaltar que ela oferece uma série de benefícios à saúde, tanto terapêuticos quanto culturais, sociais, educacionais e científicos. Além disso, como qualquer atividade física, o cérebro libera serotonina, substância que proporciona sensação de alívio e melhora o humor e o sono. </p> </td>
+    </tr> 
+</div>
+     <tr>
+        <td class="p2"><p>"A dança é poesia com braços e pernas, material, graciosa e terrível, viva, embelezada de movimento". -Carlos Baudelaire.</td>
+        </tr>
+        <section>
+            <div class="topic"> 
+                <h2></h2>
+                <div class="content">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_1miu9CWAbw" title="29 de abril - Dia Internacional da Dança" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+<section>
+    <div class="topic-texto3">
+    <table class="foto">
+        <tr rowspan="2" height="200px">
+            <td rowspan="2" width="200px">
+                <img class="carinha" src="https://res.cloudinary.com/opera-national-de-paris/image/upload/c_crop%2Ch_417%2Cw_418%2Cx_33%2Cy_18/h_570%2Cw_570/f_auto/v1/user_photos/mrppmtarpnuss1ixhnj6?_a=E" alt=""></td>
+            <td rowspan="2" > <p class="p3">
+                Aluno de Louis Dupré, Noverre estreou-se como bailarino na  Opéra Comique de Paris em 1743 e liderou, em muitas partes do mundo, uma carreira  como bailarino medíocre, mas com  propostas criativas para trabalhos coreográficos impressionantes.   A sua coreografia levou-o a Londres, onde Garrick, que dizia que Noverre era o Shakespeare da dança, convidou-o para o Drury Lane Theatre, onde permaneceu durante dois anos, até  que o levante em Inglaterra rejeitou os franceses, forçando-o a manter uma vida privada. perfil. . discreto.   Nesta altura, escreveu  Cartas sobre a Dança,  documento em forma epistolar, dirigido ao Príncipe de Württemberg, no qual evocava a necessidade de reformar a dança clássica, que se apoiava fortemente na música e na ópera e, segundo o autor, deveria. . , buscou a  independência através da integração de formas de arte em seu trabalho.   Quando as cartas foram publicadas, Noverre foi chamado à corte de Stuttgart para atuar como mestre de balé. Lá ele foi frequentemente visitado por Vestris, um admirador de seu trabalho.</td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td colspan="2">  
+                <p class="p3"> <br>              
+                    Maria Antonieta, grã-duquesa de Viena e grande admiradora de Noverre, casou-se com o príncipe herdeiro da França, Luís XVI, em 1770. Quando Luís subiu ao trono, Maria Antonieta, como rainha, nomeou diretora de Noverre  da Ópera de Paris, na Praça Vestris. Em 1781, a Ópera sofreu um grande incêndio, depois foi reformada e reaberta, com o balé Os Caprichos de Galatea de Noverre (anteriormente composto): o primeiro balé produzido inteiramente sem Há canto, uma ruptura definitiva com o gênero  ópera.  Diante de diversas intrigas políticas de seus oponentes, Noverre assinou um acordo deixando a Ópera para a gestão conjunta de Dauberval e Gardel, o que fez em 1782. O acordo não foi cumprido, Dauberval foi afastado, retornando então à Ópera de Bordeux,. onde coreografou uma comédia pastoral, La Fille Mal-Gardée, fiel aos princípios de Noverre; e os irmãos Gardel assumiram a direção da Ópera de Paris, desde o final do reinado até a sua restauração, encenando balés que seguiam mecanicamente os princípios de Noverre, mas  em execução não superior ao virtuosismo técnico. “Cartas sobre a dança e a arte da imitação em geral e da dança em particular” só foi publicada em Paris  em 1807. Noverre morreu em 1810 enquanto escrevia o primeiro Dictionnaire de la danse, no qual abandonou as opiniões expressas sobre esta arte na Enciclopédia. e os escritos de Cahusac, teórico e crítico  da dança da época.</td>
+        </tr>
+    </table>
+    </div>
+</div>
+</section>
+</table>
+</section>
+<footer>
+    <p class="p1">&copy; 2024 - Histórico de São João
+</footer>
+</body>
+</html> 

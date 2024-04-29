@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(backs/baque.svg);
+    background-size: 100%;
+    margin: 0;
+    background-color: #8b4513;
+    
+}
+main{
+    height: 1490vh;
+    margin: 20px;
+    width: 800px;
+    font-size: 20px;
+    text-align: justify;
+}
+header
+{
+    background-image: url('https://www.cvc.com.br/dicas-de-viagem/wp-content/uploads/2019/04/sao-joao-campina-grande-emmanuel-tadeuu-topo-e1654087061831.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 300px; /* Aumentando o padding */
+            text-align: center;
+            color: #fff; /* Texto branco */
+            font-family: "Times New Roman", Times, serif; /* Alterando a fonte */
+            font-size: 30px; /* Alterando o tamanho da fonte */
+}
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer
+{
+    background-color: #8b4513; /* Marrom escuro */
+    color: #fff; /* Texto branco */
+    padding: -20px ;
+    text-align: end;
+    bottom: 0;
+    width: 100%;
+    
+}
+p{
+    text-align: justify;
+    font-size: 25px;
+    margin: 10px;
+}
+.sec1{
+    margin: 0px;
+    text-align: center;
+    position: relative;top: -350px;left: 300px;
+    font-size: 70px;
+}
+.sec2{
+    margin: 0px;
+    text-align: center;
+    position: relative;top: 10px;
+    background-color: aliceblue;
+    max-width: 150%;
+}
+.sec3{
+    margin: 0px;
+    text-align: center;
+    position: relative;top: 50px;
+    background-color: aliceblue;
+    max-width: 150%;
+}
+.sec4{
+    margin: 0px;
+    text-align: center;
+    position: relative;top: 100px;
+    background-color: aliceblue;
+    max-width: 150%;
+}
+.sec5{
+    margin: 0px;
+    text-align: center;
+    position: relative;top: 150px;
+    background-color: aliceblue;
+    max-width: 150%;
+}
+.sec6{
+    margin: 0px;
+    text-align: center;
+    position: relative;top: 200px;
+    background-color: aliceblue;
+    max-width: 150%;
+}
+.sec7{
+    margin: 0px;
+    text-align: center;
+    position: relative;top: 250px;
+    background-color: aliceblue;
+    max-width: 150%;
+}
+.sec8{
+    margin: 0px;
+    text-align: center;
+    position: relative;top: 300px;
+    background-color: aliceblue;
+    max-width: 150%;
+}
+.sec9{
+    margin: 0px;
+    text-align: center;
+    position: relative;top: 350px;
+    background-color: aliceblue;
+    max-width: 150%;
+}
+.sec10{
+    margin: 0px;
+    text-align: center;
+    position: relative;top: 400px;
+    background-color: aliceblue;
+    max-width: 150%;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 0.5s;
+    transform: translateX(0);
+}
+.imgp{
+    margin: 45px;
+    height: 500px;
+    border-radius: 20%;
+    
+}
+.list{
+    border: 0px;
+    text-align: justify;
+    font-size: 20px;
+    position: relative;left: 0px;top: 0px;
+    background-color: aliceblue;
+    max-width: 300px;
+}
+.menu {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8b4513; /* Marrom escuro */
+    color: #fff; /* Texto branco */
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 20px; /* Formato redondo */
+    transition: background-color 0.3s ease;
+    border: 2px solid #6b3510; /* Borda marrom mais escura */
+}
+
+.menu:hover {
+    background-color: #6b3510; /* Marrom escuro mais escuro */
+}
+
+.menu:active {
+    transform: translateY(2px); /* Efeito de pressionar */
+}
+.men{
+    border: 10px;
+    text-align: justify;
+    font-size: 30px;
+    position: relative;left: -300px;top: 400px;
+    background-color: aliceblue;
+    max-width: 300px;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: darkgray;
+}
+h1{
+    margin-bottom: 10px;
+        background-color: #8b4513;
+}
+h2{
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 40px;
+    background-color:#8b4513;
+}
+video{
+    width: 700px;
+    border-radius: 10px;
+}
+.piu{
+    font-size: 15px;
+    margin-left: 70px;
+}
+iframe{
+    height: 400px;
+    width: 700px;
+    position: relative;right: 40px;
+}
+section{
+    margin-top: 50px;
+}
+.ets{
+    text-decoration: none;
+color: aliceblue;
+position: fixed;left: 1400px;
+background-color: #6b3510;
+    font-size: 40px;
+}
+.print{
+    height: 300px;
+    
+}
